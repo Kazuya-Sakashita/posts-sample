@@ -19,9 +19,15 @@
         <td class="border px-4 py-2"><%= post.title %></td>
         <td class="border px-4 py-2"><%= post.name %></td>
         <td class="border px-4 py-2"><%= post.body %></td>
+<<<<<<< HEAD
+        <td class="border px-4 py-2"><%= link_to 'Show', post, {method: :get, class: "inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"} %></td>
+        <td class="border px-4 py-2"><%= link_to 'Edit', edit_post_path(post), method: :get %></td>
+        <td class="border px-4 py-2"><%= link_to 'Destroy', post, {method: :delete,class:"bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded", data: { confirm: 'Are you sure?' }} %></td>
+=======
         <td class="border px-4 py-2"><%= button_to 'Show', post, method: :get,class:"bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" %></td>
         <td class="border px-4 py-2"><%= button_to 'Edit', edit_post_path(post), method: :get,class:"bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" %></td>
         <td class="border px-4 py-2"><%= button_to 'Destroy', post, {method: :delete,class:"bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded", data: { confirm: 'Are you sure?' }} %></td>
+>>>>>>> bf991ca96f6a4766066c6da665f4d1a313484942
       </tr>
     <% end %>
   </tbody>
